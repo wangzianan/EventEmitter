@@ -7,11 +7,13 @@
 ## 使用方法
 ### 1.导入
 浏览器端
+
 ```
 <script type="text/javascript" src="./eventEmitter.js">
 </script>
 ```
 node端
+
 var eventEmitter = require("./eventEmitter.js");
 
 ### 2.API
