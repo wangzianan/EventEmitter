@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript" src="./eventEmitter.js">
+    </script>
+    <script type="text/javascript">
+      var eventEmitter = new EventEmitter();
+      function eat(data) {
+        console.log(`吃${data}`);
+      }
+      eventEmitter.addListener("breakfast", eat);
+      eventEmitter.addListener("lunch", eat);
+      eventEmitter.addListener("dinner", eat);
+      eventEmitter.emit("breakfast", "牛奶，吐司");
+      eventEmitter.emit("lunch", "宫保鸡丁盖饭");
+      eventEmitter.emit("dinner", "豚骨拉面", "玉子烧");
+      eventEmitter.removeListener("dinner", eat);
+      eventEmitter.emit("dinner", "兰州拉面");
+    </script>
+  </body>
+</html>
