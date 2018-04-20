@@ -33,4 +33,4 @@ eventEmitter.emit(name, data)
 * data 数据
 
 ## Example
-见本文件夹的 event.html
+见本文件夹的 [event.html](https://github.com/wangzianan/EventEmitter/blob/master/event.html)
